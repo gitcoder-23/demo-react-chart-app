@@ -462,3 +462,104 @@ function DemoChartDemoApp() {
 }
 
 export default DemoChartDemoApp;
+
+//   <Box
+//     sx={{
+//       width: "100%",
+//       height: 330,
+//       background: "#fff",
+//       borderRadius: 2,
+//       boxShadow: "0px 2px 8px 0px rgb(231, 230, 230)",
+//       paddingTop: "6px",
+//       paddingBottom: "10px",
+//     }}
+//   >
+//     <ResponsiveContainer width="100%" height="100%">
+//       <ComposedChart data={chartData}>
+//         <CartesianGrid strokeDasharray="3 3" vertical={false} />
+//         <XAxis dataKey="month" tick={{ fontSize: 12 }} />
+//         <YAxis
+//           yAxisId="left"
+//           orientation="left"
+//           tick={{ fontSize: 12 }}
+//           domain={[0, 30000]}
+//           tickFormatter={(v) => (v >= 1000 ? `${v / 1000}K` : v)}
+//         />
+//         <YAxis
+//           yAxisId="right"
+//           orientation="right"
+//           tick={{ fontSize: 12 }}
+//           domain={[88, 100]}
+//           tickFormatter={(v) => `${v}%`}
+//         />
+//         <ChartToolTip content={<CustomTooltip />} />
+//         <Legend
+//           verticalAlign="top"
+//           align="left"
+//           iconType="circle"
+//           wrapperStyle={{ paddingBottom: 10 }}
+//         />
+//         <Bar
+//           yAxisId="left"
+//           dataKey="bop_sum_sp"
+//           name="BOP"
+//           fill={COLORS.bop}
+//           barSize={18}
+//           radius={[4, 4, 0, 0]}
+//         />
+//         <Bar
+//           yAxisId="left"
+//           dataKey="shpm_sp"
+//           name="SH"
+//           fill={COLORS.sh}
+//           barSize={18}
+//           radius={[4, 4, 0, 0]}
+//         />
+//         <Line
+//           yAxisId="right"
+//           type="monotone"
+//           dataKey="spNum"
+//           name="SP1"
+//           stroke={COLORS.sp}
+//           strokeWidth={3}
+//           dot={{ r: 4, stroke: "#fff", strokeWidth: 2 }}
+//           activeDot={{ r: 6 }}
+//         >
+//           <LabelList
+//             dataKey="sp"
+//             position="top"
+//             style={{
+//               fontSize: 12,
+//               fontWeight: 600,
+//               fill: "#444",
+//               background: "#444",
+//             }}
+//             content={({ x, y, value }) => (
+//               <g>
+//                 <rect
+//                   x={x! - 18}
+//                   y={y! - 22}
+//                   rx={4}
+//                   ry={4}
+//                   width={36}
+//                   height={18}
+//                   fill="#444"
+//                   opacity={0.8}
+//                 />
+//                 <text
+//                   x={x}
+//                   y={y! - 10}
+//                   textAnchor="middle"
+//                   fill="#fff"
+//                   fontSize={12}
+//                   fontWeight={600}
+//                 >
+//                   {value}
+//                 </text>
+//               </g>
+//             )}
+//           />
+//         </Line>
+//       </ComposedChart>
+//     </ResponsiveContainer>
+//   </Box>
