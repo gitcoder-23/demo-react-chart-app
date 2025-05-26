@@ -177,7 +177,7 @@ const CpfChart = () => {
               marginRight: "8px",
             }}
           />
-          <span>Forecasted Shipments (2024)</span>
+          <span>Forecasted Shipments (2024) </span>
         </div>
         <div
           style={{
